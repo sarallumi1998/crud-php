@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRUD OPERATIONS</title>
+</head>
+
+<body>
+<form name="form1" method="post" enctype="multipart/form-data" action="crudform.php" id="form1">
+	<table width="800" border="2">
+  <tbody>
+    <tr>
+        <td>Roll Number</td>
+        <td><label><input name="number" type="text" id="number"/>
+            </label>&nbsp;</td>
+      </tr>
+   <tr>
+      <td>Name</td>
+      <td><label><input name="name" type="text" id="name"/>
+		  </label>&nbsp;</td>
+    </tr>
+      <tr>
+        <td>ADDRESS</td>
+        <td><textarea name="address" cols="40" rows="4" id="address">
+        </textarea>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>MAIL ID</td>
+        <td><label><input name="email" type="email" id="email"/>
+            </label>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td><label><input name="date" type="date" id="date"/>
+            </label>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>GENDER</td>
+        <td><input id="female" type="radio" name="gender"
+            value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender"
+            value="m">
+            <label for="male">Male</label>
+            </td>
+      </tr>
+      <tr>
+        <td>PHONE NUMBER</td>
+        <td><label><input name="phonenumber" type="tel" id="phonenumber"/>
+            </label>&nbsp;</td>
+      </tr>
+							 
+							 
+      <td>fileupload</td>
+      <td><input type="file" name="fileToUpload" id="fileToUpload">
+							 
+							 </td>
+    </tr>
+	  
+	  <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                </td>
+                </tr>
+	  </table>
+            </form>
+
+
+        
+ 
+    
+    
+</body>
+</html>
+
