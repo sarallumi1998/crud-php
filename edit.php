@@ -42,6 +42,7 @@ $fileToUpload=$row["fileToUpload"];
     <label for="name" style="font-size:20px;"></label>
 	     <input type="hidden" name='yid'id='yid' value=<?php echo $id?>>
   <tbody>
+  <h1>Update Form</h1>
     <tr>
         <td>Roll Number</td>
         <td><label><input name="number" type="text" id="number" value="<?php echo $number; ?>"/>

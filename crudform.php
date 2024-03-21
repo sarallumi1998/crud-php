@@ -40,3 +40,10 @@ else
 mysqli_close($conn);
 
 ?>
+<?php
+
+if(empty($_POST["number"]) || empty($_POST["name"]) || empty($_POST["address"]) || empty($_POST["email"]) || empty($_POST["date"]) || empty($_POST["gender"]) || empty($_POST["phonenumber"]) || empty($_FILES["fileToUpload"]["name"])) {
+    echo "All fields are required.";
+    exit;
+}
+?>

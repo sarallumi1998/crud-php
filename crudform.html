@@ -6,9 +6,10 @@
 </head>
 
 <body>
-<form name="form1" method="post" enctype="multipart/form-data" action="crudform.php" id="form1">
+<form name="form1" method="post" enctype="multipart/form-data" action="crudform.php" id="form1" onsubmit="return validateForm()">
 	<table width="800" border="2">
   <tbody>
+    <h1>Create Form</h1>
     <tr>
         <td>Roll Number</td>
         <td><label><input name="number" type="text" id="number"/>
@@ -74,3 +75,21 @@
 </body>
 </html>
 
+<script>
+  function validateForm() {
+      var number = document.forms["form1"]["number"].value;
+      var name = document.forms["form1"]["name"].value;
+      var address = document.forms["form1"]["address"].value;
+      var email = document.forms["form1"]["email"].value;
+      var date = document.forms["form1"]["date"].value;
+      var gender = document.forms["form1"]["gender"].value;
+      var phonenumber = document.forms["form1"]["phonenumber"].value;
+      var fileToUpload = document.forms["form1"]["fileToUpload"].value;
+
+      if (number == "" || name == "" || address == "" || email == "" || date == "" || gender == "" || phonenumber == "" || fileToUpload == "") {
+          alert("All fields must be filled out");
+          return false;
+      }
+      return true;
+  }
+</script>
