@@ -53,5 +53,5 @@ if ($res) {
     exit();
 }
 
-header("Location: view.php");
+header("Location:register.php");
 ?>
